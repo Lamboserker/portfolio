@@ -1,0 +1,61 @@
+@import url("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+body {
+  background-image: url("/image/pexels-cátia-matos-1072179.jpg");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.GitHub::after {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+
+.card-body:hover .fa-html5 {
+  transform: rotateZ(45deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card-body:hover .fa-css3-alt {
+  transform: rotateZ(45deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card-body:hover .fa-js-square {
+  transform: rotateZ(45deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.card-body:hover .fa-bootstrap {
+  transform: rotateZ(45deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+card-body .fa {
+  animation: none;
+  transform-origin: center;
+}
+
+.card-body:hover .fa {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.skill-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.foto {
+  border-radius: 10px;
+}
