@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lamboserker/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lamboserker/portfolio/issues"
+  },
+  "homepage": "https://github.com/Lamboserker/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
