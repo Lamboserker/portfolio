@@ -65,15 +65,6 @@ body {
   }
 }
 
-.skill-container {
-  background-color: rgba(0, 255, 255, 0.2);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.foto {
-  border-radius: 10px;
-}
-
 .card-body:hover .fa-html5 {
   animation: neon 1s ease-in-out infinite alternate;
 }
@@ -88,6 +79,14 @@ body {
 
 .card-body:hover .fa-bootstrap {
   animation: neon 1s ease-in-out infinite alternate;
+}
+.skill-container {
+  background-color: rgba(0, 255, 255, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.foto {
+  border-radius: 10px;
 }
 
 /* Neon Colors */
