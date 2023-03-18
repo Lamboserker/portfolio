@@ -34,7 +34,7 @@ body {
   transition: transform 0.7s ease-in-out;
 }
 
-card-body .fa {
+.card-body .fa {
   animation: none;
   transform-origin: center;
 }
@@ -52,10 +52,57 @@ card-body .fa {
   }
 }
 
+@keyframes neon {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff, 0 0 150px #00ffff;
+  }
+  100% {
+    color: #00ff00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ffff, 0 0 35px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 75px #00ff00;
+  }
+}
+
 .skill-container {
+  background-color: rgba(0, 255, 255, 0.2);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .foto {
   border-radius: 10px;
+}
+
+.card-body:hover .fa-html5 {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+.card-body:hover .fa-css3-alt {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+.card-body:hover .fa-js-square {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+.card-body:hover .fa-bootstrap {
+  animation: neon 1s ease-in-out infinite alternate;
+}
+
+/* Neon Colors */
+.card-body {
+  color: #fff;
+}
+
+.card-title {
+  color: #00ff00;
+}
+
+.btn-primary {
+  background-color: #00ffff;
+  border-color: #00ffff;
+}
+
+.btn-primary:hover {
+  background-color: #00ff00;
+  border-color: #00ff00;
 }
