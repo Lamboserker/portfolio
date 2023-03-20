@@ -1,17 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
-
 }
 
 body {
   background-image: url("/image/pexels-felix-mittermeier-956999.jpg");
   width: 100vw;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 .container {
-  background-color: blue;
+  /* Created with https://www.css-gradient.com */
+  background: #131f41;
+  background: -webkit-linear-gradient(top left, #131f41, #1994f2);
+  background: -moz-linear-gradient(top left, #131f41, #1994f2);
+  background: linear-gradient(to bottom right, #131f41, #1994f2);
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
   width: 400px;
   height: 650px;
   position: relative;
@@ -26,11 +35,14 @@ body {
   margin-top: 1rem;
 }
 
+.head h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .form {
-  
   width: 100%;
-  
-  
 }
 
 form {
@@ -38,80 +50,68 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 
 label {
   margin-left: 2.2rem;
   align-self: flex-start;
   margin-bottom: 0.5rem;
+  font-weight: bolder;
+  font-size: larger;
 }
 
-input, textarea {
+input,
+textarea {
   margin-bottom: 1.5rem;
   text-align: center;
   border-radius: 10px;
-  
 }
 
-
-  .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+.button-10 {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+.button-10:hover {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
 }
 
-.glow-on-hover:active {
-    color: #000
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
 }
 
-.glow-on-hover:active:after {
-    background: transparent;
+.icons i {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.glow-on-hover:hover:before {
-    opacity: 1;
+.icons i:hover {
+  transform: scale(1.2);
 }
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
