@@ -6,10 +6,10 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+ 
   font-family: "Open Sans", sans-serif;
   color: white;
+  position: relative;
 }
 
 header {
@@ -51,7 +51,6 @@ nav ul li a.active {
 }
 
 .container {
-  /* Created with https://www.css-gradient.com */
   background: #131f41;
   background: -webkit-linear-gradient(top left, #131f41, #1994f2);
   background: -moz-linear-gradient(top left, #131f41, #05355a);
@@ -69,6 +68,22 @@ nav ul li a.active {
   z-index: 1;
   overflow: hidden;
 }
+
+@media (max-width: 701px) {
+  .container {
+    width: 100%;
+    height: 630px;
+    position: absolute;
+    top: 10;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
 
 .head {
   margin-top: 1rem;
