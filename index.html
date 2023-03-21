@@ -101,8 +101,13 @@
               <div class="col-md-11 bg-transparent">
                 <div class="card-body">
                 
+
+                  <div class="star-wars">
+                    <h1 class="title"></h1>
+                  </div>
+                  
                   <p class="card-text text-light h5 mt-3">
-                    I'm Lukas Lamberz and I'm on my way to becoming a fullstack web developer. On this page you will find a selection of my previous projects and further information about me and my work.
+                    
                   </p>
                 </div>
               </div>
@@ -213,6 +218,15 @@ anime.timeline({loop: true})
   });
       </script>
       
+<script>
 
+const text = "I'm Lukas Lamberz and I'm on my way to becoming a fullstack web developer. On this page you will find a selection of my previous projects and further information about me and my work.";
+
+title.innerHTML = text
+  .split('')
+  .map((char) => `<span>${char}</span>`)
+  .join('');
+
+</script>
   </body>
 </html>
