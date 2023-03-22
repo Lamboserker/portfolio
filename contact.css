@@ -1,17 +1,20 @@
+/*Imports*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
+/*Format*/
 * {
   padding: 0;
   margin: 0;
 }
 
+/*general*/
 body {
- 
   font-family: "Open Sans", sans-serif;
   color: white;
   position: relative;
 }
 
+/*Head*/
 header {
   background-color: #343a403e;
   color: #fff;
@@ -25,31 +28,7 @@ header {
   height: 60px;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-}
-
-nav ul li a.active {
-  background-color: #555;
-}
-
+/*Contact Card*/
 .container {
   background: #131f41;
   background: -webkit-linear-gradient(top left, #131f41, #1994f2);
@@ -60,7 +39,7 @@ nav ul li a.active {
   width: 400px;
   height: 630px;
   position: relative;
-  top: 7rem;
+  top: 4rem;
   left: 39%;
   display: flex;
   flex-direction: column;
@@ -69,12 +48,13 @@ nav ul li a.active {
   overflow: hidden;
 }
 
+/*Media Querry for Container*/
 @media (max-width: 701px) {
   .container {
     width: 100%;
     height: 630px;
     position: absolute;
-    top: 10;
+    top: 17%;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -84,12 +64,18 @@ nav ul li a.active {
   }
 }
 
-
 .head {
-  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #4a4d75, #5d5c8e, #a5a5a5);
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .head h1 {
+  margin: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -217,4 +203,50 @@ textarea {
 .socials-bar span {
   background-color: #131f41;
   padding: 0 10px;
+}
+
+/* TRY*/
+
+footer {
+  background-color: transparent;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#footer-text {
+  margin-bottom: 2.6rem;
+}
+
+#footer-text::before {
+  content: "Copyright © 2023 ";
+}
+
+#footer-text::after {
+  content: "Lukas Lamberz- All Rights Reserved";
+}
+
+@media screen and (max-width: 767px) {
+  #footer-text {
+    font-size: 14px;
+  }
 }

@@ -9,50 +9,87 @@
     <script src="https://kit.fontawesome.com/71df581bd8.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="finisher-header" style="height: 232vh">
+<body class="header finisher-header" style="
+  width: 100%;
+  height:auto auto;
+  background-size: cover;">
 
-	 <!--Background-->
 
-	 
-		<header class="bg-dark py-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-6">
-						<h1 class="text-white">Lukas Oliver Lamberz</h1>
-						<p class="text-white"> becoming a Web Developer</p>
-					</div>
-					<div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center align-items-center">
-						<a href="/contact.html" class="btn btn-primary">Contact Me</a>
-						<a href="/index.html" class="btn btn-primary m-4">Home</a>
-					</div>
-				</div>
-			</div>
-		</header>
 	
-	  
-	  <br>
-	  <br>
-	  <br>
-	  <br><br><br>
+  <!--Navbar-->
+  <header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+	  <div class="container-fluid">
+		<button
+		  class="navbar-toggler"
+		  type="button"
+		  data-bs-toggle="collapse"
+		  data-bs-target="#navbarNav"
+		  aria-controls="navbarNav"
+		  aria-expanded="false"
+		  aria-label="Toggle navigation"
+		>
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div
+		  class="collapse navbar-collapse justify-content-center"
+		  id="navbarNav"
+		>
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a
+				class="nav-link active m-4"
+				aria-current="page"
+				href="/index.html"
+				>Home</a
+			  >
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link m-4" href="über-mich.html">About me</a>
+			</li>
+		   
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link m-4" href="/über-mich.html#portfolio"
+				>Projects</a
+			  >
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link m-4" href="/contact.html">Contact</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  </header>
+	 
     
 	<main>
-		<section id="about" class="container py-5 ">
+
+		<!--About me-->
+		<section id="about" class="container py-3">
 			<div class="row">
-				<div class="col-12 col-md-6">
-					<h1 class="text-white">About Me</h1>
-					<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse porttitor lectus non enim posuere,<br> eget sagittis orci consectetur. <br>Pellentesque habitant morbi tristique senectus et netus, <br> et malesuada fames ac turpis egestas.<br> Aenean luctus dolor et imperdiet pretium.<br> Duis bibendum dui sapien, in laoreet nulla pellentesque a.</p>
+				<div class="col-12 col-md-5">
+					<h1 class="shadow-none p-1  bg-transparent rounded text-light text-center mb-4"><mark style="border-radius: 10px; background: linear-gradient(to right, #5E5D89, #4B4E6D);">About Me</mark></h1>
+					<p class="shadow-lg p-4 mb-5 bg-secondary rounded text-start text-light">I'm an aspiring full-stack web developer with a passion for creating digital solutions that make the world a better place. I'm fascinated by technology and the opportunities it offers to solve complex problems and improve the user experience.<br>
+						<br>
+						I have experience with various technologies and languages such as HTML, CSS, JavaScript, Node.js, and React, and I'm constantly learning to improve my skills. I'm also interested in UX design and strive to create an intuitive and engaging user interface that meets users' needs.<br>
+						<br>
+						I'm highly motivated, goal-oriented, and passionate about delivering excellent results. If you're working on a project that presents a complex technological challenge, I'm the right person for the job. I look forward to working with you to bring your vision to life.</p>
 				</div>
 				<div class="col-12 col-md-6">
 					<img src="/image/IMG_7068.JPG" alt="Profile Picture" class="img-fluid foto">
 				</div>
 			</div>
 		</section>
+		
 		<!--My Skills-->
         <section id="skills" class="bg-transparent py-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="text-center mb-5 text-light">My Skills</h2>
+						<h2 class="text-center mb-5 text-light"><mark style="border-radius: 10px; background: linear-gradient(to right, #4A4D75, #5D5C8E, #A5A5A5);
+							;">My Skills</mark></h2>
 					</div>
 				</div>
 				<div class="row">
@@ -96,10 +133,13 @@
 			</div>
 		</section>
 
+
+<!--Projects-->
 		<section id="portfolio" class="container py-5">
 			<div class="row">
 				<div class="col-12">
-					<h2 class="text-light text-center mb-5">My Portfolio</h2>
+					<h2 class="text-center mb-5 text-light"><mark style="border-radius: 10px; background: linear-gradient(to right, #4A4D75, #5D5C8E, #A5A5A5);
+						;">My Portfolio</mark></h2>
 				</div>
 			</div>
 			<div class="row">
@@ -108,7 +148,7 @@
 						<img src="/image/standard.gif" alt="Project 1" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">COLA SCHMECKT BESSER</h5>
-							<p class="card-text">My First Project was to build a Webpage for our Discord-Server</p>
+							<p class="card-text text-dark">My First Project was to build a Webpage for our Discord-Server</p>
 							<a href="https://github.com/Lamboserker/COLA" target="blank" class="btn btn-primary GitHub">Watch on GitHub</a>
 						</div>
 					</div>
@@ -118,7 +158,7 @@
 						<img src="https://via.placeholder.com/500" alt="Project 2" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Project 2</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor lectus non enim posuere.</p>
+							<p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor lectus non enim posuere.</p>
 							<a href="#" target="blank" class="btn btn-primary GitHub">Watch on GitHub</a>
 						</div>
 					</div>
@@ -128,7 +168,7 @@
 						<img src="https://via.placeholder.com/500" alt="Project 3" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">Project 3</h5>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor lectus non enim posuere.</p>
+							<p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porttitor lectus non enim posuere.</p>
 							<a href="#" target="blank" class="btn btn-primary GitHub">Watch on GitHub</a>
 						</div>
 					</div>
@@ -136,19 +176,22 @@
 			</div>
 		</section>
 
-	</main>
+
+
+	</main> 
+ 
 <!--Footer-->
-	<footer class="bg-t py-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<p class="text-center text-light">
-						Copyright © 2023 Lukas Lamberz-	All Rights Reserved
-					  </p>
-				</div>
+<footer class="bg-t">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p class="text-center text-light">
+					Copyright © 2023 Lukas Lamberz-	All Rights Reserved
+				  </p>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 
 	<!--Scripts-->
 	

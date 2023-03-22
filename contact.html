@@ -11,80 +11,90 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="finisher-header" style="height: 100vh;">
- 
-    
-
-  
-      <!--Navbar-->
-      
-        <header>
-          <nav>
-            <a class="logo" href="/index.html"
-              ><img src="/image/png/logo-no-background.png" alt="Logo"
-            /></a>
-          </nav>
-        </header>
-      
-    
+  <body class="finisher-header" style="height: 100vh">
+   
+   
+    <!--Navbar-->
+    <header>
+      <nav>
+        <a class="logo" href="/index.html"
+          ><img src="/image/png/logo-no-background.png" alt="Logo"
+        /></a>
+      </nav>
+    </header>
 
     <!--Contact Me-->
+    <main>
+      <div class="container">
+        <div class="head">
+          <h1 >Contact me</h1>
+        </div>
+        <div class="form">
+          <form>
+            <label for="fname">First Name</label>
 
-    <div class="container">
-      <div class="head"><h1>Contact me</h1></div>
-      <div class="form">
-        <form>
-          <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              fixed-bottom
+              placeholder="Your name.."
+              style="width: 80%; height: 2rem"
+            />
 
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-            style="width: 80%; height: 2rem"
-          />
+            <label for="lname">Last Name</label>
 
-          <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+              style="width: 80%; height: 2rem"
+            />
 
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-            style="width: 80%; height: 2rem"
-          />
+            <label for="subject">Message</label>
 
-          <label for="subject">Message</label>
-
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style="width: 80%; height: 4rem"
-          ></textarea>
-        </form>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="width: 80%; height: 4rem"
+            ></textarea>
+          </form>
+        </div>
+        <button class="button-10" role="button">Send</button>
+        <div class="socials-bar">
+          <span>My Socials</span>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com/blcklmb96/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-2xl" style="color: #005eff"></i
+          ></a>
+          <a href="https://www.facebook.com/lukas.lamberz" target="_blank"
+            ><i class="fa-brands fa-facebook fa-2xl" style="color: #005eff"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/lukas-oliver-lamberz-206b30262/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl" style="color: #005eff"></i
+          ></a>
+          <a href="https://github.com/Lamboserker" target="_blank"
+            ><i class="fa-brands fa-github fa-2xl" style="color: #005eff"></i
+          ></a>
+        </div>
       </div>
-      <button class="button-10" role="button">Send</button>
-      <div class="socials-bar">
-        <span>My Socials</span>
+    </main>
+
+    <!--Footer-->
+    <footer class="bg-t">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-center text-light" id="footer-text"></p>
+          </div>
+        </div>
       </div>
-      <div class="icons">
-        <a href="https://www.instagram.com/blcklmb96/" target="_blank"
-          ><i class="fa-brands fa-instagram fa-2xl" style="color: #005eff"></i
-        ></a>
-        <a href="https://www.facebook.com/lukas.lamberz" target="_blank"
-          ><i class="fa-brands fa-facebook fa-2xl" style="color: #005eff"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/lukas-oliver-lamberz-206b30262/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin fa-2xl" style="color: #005eff"></i
-        ></a>
-        <a href="https://github.com/Lamboserker" target="_blank"
-          ><i class="fa-brands fa-github fa-2xl" style="color: #005eff"></i
-        ></a>
-      </div>
-    </div>
+    </footer>
 
     <!--Scripts-->
     <script src="finisher-header.es5.min.js" type="text/javascript"></script>
