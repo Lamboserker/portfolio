@@ -9,8 +9,7 @@
 
 /*general*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif "Open Sans";
   position: relative;
 }
 
@@ -51,11 +50,11 @@ header {
 /*Media Querry for Container*/
 @media (max-width: 701px) {
   .container {
-    width: 100%;
+    width: 80%;
     height: 630px;
     position: absolute;
     top: 17%;
-    left: 0;
+    left: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +62,44 @@ header {
     overflow: hidden;
   }
 }
+
+@media (min-width: 735px) {
+  .container {
+    width: 60%;
+    height: 630px;
+    position: absolute;
+    top: 17%;
+    left: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1191px) {
+  .container {
+    background: #131f41;
+  background: -webkit-linear-gradient(top left, #131f41, #1994f2);
+  background: -moz-linear-gradient(top left, #131f41, #05355a);
+  background: linear-gradient(to bottom right, #131f41, #0f578e);
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  width: 400px;
+  height: 630px;
+  position: relative;
+  top: 4rem;
+  left: 39%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+  }
+
 
 .head {
   width: 100%;
@@ -78,6 +115,8 @@ header {
   margin: 1rem;
   font-size: 3rem;
   font-weight: bold;
+  color: white;
+
 }
 
 .form {
@@ -92,18 +131,37 @@ form {
 }
 
 label {
-  margin-left: 2.2rem;
-  align-self: flex-start;
-  margin-bottom: 0.5rem;
+  margin-left: 0rem;
+  align-self: start;
+  margin-bottom: 0.7rem;
   font-weight: bolder;
   font-size: larger;
+  color: white;
+  
+
+}
+
+mark{
+  padding: 0.5rem ;
+  background:linear-gradient(to right, #4A4D75, #5D5C8E, #A5A5A5);
+  border-radius: 5px;
+  color: white;
+  
 }
 
 input,
 textarea {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.1rem;
   text-align: center;
+  
   border-radius: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(25, 148, 242, 0.5);
+  border-color: #05355a;
 }
 
 .button-10 {
@@ -112,12 +170,11 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 14px;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 6px;
-  border: none;
+  border: 2px solid #1994f2;
   width: 200px;
   padding: 1rem;
   color: #fff;
@@ -128,9 +185,12 @@ textarea {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  transition: all 0.3s ease;
 }
 
 .button-10:hover {
+  background: #05355a;
+  border-color: #1994f2;
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
     0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
     0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
@@ -250,3 +310,5 @@ footer {
     font-size: 14px;
   }
 }
+
+
