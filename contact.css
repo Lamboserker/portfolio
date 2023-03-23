@@ -130,6 +130,7 @@ form {
 }
 
 label {
+  
   margin-left: 0rem;
   align-self: start;
   margin-bottom: 0.7rem;
@@ -146,16 +147,25 @@ mark {
 }
 input::placeholder,
 textarea::placeholder {
-  color: black;
+  color: white;
 }
 
 input,
 textarea {
   margin-bottom: 1.1rem;
   text-align: center;
-  background-color: rgb(175, 174, 174);
-  border-radius: 5px;
+  background-color: rgba(25, 148, 242, 0.5);
+  border-radius: 2px;
+  border: none;
 }
+
+textarea::placeholder{
+  position: absolute;
+  top: 10px;
+  
+  
+}
+
 
 input:focus,
 textarea:focus {

@@ -1,6 +1,7 @@
+/*Imports*/
 @import url("./node_modules/bootstrap/dist/css/bootstrap.css");
 
-
+/*Cursor*/
 #about .bg-secondary::after {
   content: "|";
   display: inline-block;
@@ -19,9 +20,6 @@
     color: white;
   }
 }
-
-
-
 
 
 
@@ -128,7 +126,8 @@
 }
 
 .btn-primary:hover {
-  background-color: #00ff00;
+  background: linear-gradient(to bottom,#d901ff, #4A4D75, #1994f2 );
+
   border-color: #00ff00;
 }
 
