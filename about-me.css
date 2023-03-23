@@ -5,15 +5,15 @@
 #about .bg-secondary::after {
   content: "|";
   display: inline-block;
-  font-weight:bolder;
+  font-weight: bolder;
   font-size: 1em;
-  line-height: 1em;
   animation: blink 1s infinite;
+  
 }
 
-
 @keyframes blink {
-  from, to {
+  from,
+  to {
     color: transparent;
   }
   50% {
@@ -21,16 +21,21 @@
   }
 }
 
-
-
 /*Skill-Section*/
 
-.GitHub::after {
-  content: "\f09b";
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 900;
-  font-size: 20px;
-  margin-left: 1rem;
+.skill-container {
+  background: linear-gradient(to right, #4a4d75, #5d5c8e, #a5a5a5);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Icons*/
+
+.card-body {
+  color: #fff;
+}
+
+.card-title {
+  color: black;
 }
 
 .card-body:hover .fa-html5 {
@@ -62,7 +67,6 @@
   animation: rotate 2s linear infinite;
 }
 
-
 @keyframes rotate {
   0% {
     transform: rotateZ(0deg);
@@ -72,20 +76,22 @@
   }
 }
 
-
-
 @keyframes neon {
   0% {
     color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ffff,
-      0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff, 0 0 150px #00ffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d694ff,
+      0 0 70px #d694ff, 0 0 80px #d694ff, 0 0 100px #d694ff, 0 0 150px #d694ff;
   }
   100% {
     color: #9d00ff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ffff,
-      0 0 35px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 75px #00ff00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d694ff,
+      0 0 35px #d694ff, 0 0 40px #d694ff, 0 0 50px #d694ff, 0 0 75px #00ff00;
   }
 }
+
+
+
+
 
 .card-body:hover .fa-html5 {
   animation: neon 1s ease-in-out infinite alternate;
@@ -102,23 +108,22 @@
 .card-body:hover .fa-bootstrap {
   animation: neon 1s ease-in-out infinite alternate;
 }
-.skill-container {
-  background: linear-gradient(to right, #4a4d75, #5d5c8e, #a5a5a5);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+
 
 .foto {
   border-radius: 10px;
 }
 
-/* Neon Colors */
-.card-body {
-  color: #fff;
-}
 
-.card-title {
-  color: #5d00ff;
-  
+
+/*Watch on GitHub Buttons*/
+
+.GitHub::after {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 1rem;
 }
 
 .btn-primary {
@@ -128,19 +133,10 @@
 
 .btn-primary:hover {
   background-color: #5d00ff;
-
- 
 }
 
-
-.navi{
+.navi {
   font-size: larger;
 }
-
-
-
-
-
-
 
 
