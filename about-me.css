@@ -81,7 +81,7 @@
       0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff, 0 0 150px #00ffff;
   }
   100% {
-    color: #00ff00;
+    color: #9d00ff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ffff,
       0 0 35px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 75px #00ff00;
   }
@@ -103,7 +103,7 @@
   animation: neon 1s ease-in-out infinite alternate;
 }
 .skill-container {
-  background-color: rgba(0, 255, 255, 0.2);
+  background: linear-gradient(to right, #4a4d75, #5d5c8e, #a5a5a5);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -117,7 +117,8 @@
 }
 
 .card-title {
-  color: #00ff00;
+  color: #5d00ff;
+  
 }
 
 .btn-primary {
@@ -126,9 +127,9 @@
 }
 
 .btn-primary:hover {
-  background: linear-gradient(to bottom,#d901ff, #4A4D75, #1994f2 );
+  background-color: #5d00ff;
 
-  border-color: #00ff00;
+ 
 }
 
 
