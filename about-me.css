@@ -1,6 +1,29 @@
 @import url("./node_modules/bootstrap/dist/css/bootstrap.css");
 
 
+#about .bg-secondary::after {
+  content: "|";
+  display: inline-block;
+  font-weight:bolder;
+  font-size: 1em;
+  line-height: 1em;
+  animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+
+
+
+
 
 /*Skill-Section*/
 
@@ -41,6 +64,7 @@
   animation: rotate 2s linear infinite;
 }
 
+
 @keyframes rotate {
   0% {
     transform: rotateZ(0deg);
@@ -49,6 +73,8 @@
     transform: rotateZ(360deg);
   }
 }
+
+
 
 @keyframes neon {
   0% {
