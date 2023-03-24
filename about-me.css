@@ -1,6 +1,8 @@
 /*Imports*/
 @import url("./node_modules/bootstrap/dist/css/bootstrap.css");
 
+
+
 /*Cursor*/
 #about .bg-secondary::after {
   content: "|";
@@ -20,6 +22,8 @@
     color: white;
   }
 }
+
+
 
 /*Skill-Section*/
 
@@ -76,21 +80,6 @@
   }
 }
 
-@keyframes neon {
-  0% {
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d694ff,
-      0 0 70px #d694ff, 0 0 80px #d694ff, 0 0 100px #d694ff, 0 0 150px #d694ff;
-  }
-  100% {
-    color: #9d00ff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d694ff,
-      0 0 35px #d694ff, 0 0 40px #d694ff, 0 0 50px #d694ff, 0 0 75px #00ff00;
-  }
-}
-
-
-
 
 
 .card-body:hover .fa-html5 {
@@ -110,9 +99,24 @@
 }
 
 
-.foto {
-  border-radius: 10px;
+@keyframes neon {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d694ff,
+      0 0 70px #d694ff, 0 0 80px #d694ff, 0 0 100px #d694ff, 0 0 150px #d694ff;
+  }
+  100% {
+    color: #9d00ff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d694ff,
+      0 0 35px #d694ff, 0 0 40px #d694ff, 0 0 50px #d694ff, 0 0 75px #00ff00;
+  }
 }
+
+
+
+
+
+
 
 
 
