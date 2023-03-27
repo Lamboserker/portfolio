@@ -54,7 +54,7 @@ header {
     width: 80%;
     height: 630px;
     position: absolute;
-    top: 17%;
+    top: 13%;
     left: 10%;
     display: flex;
     flex-direction: column;
@@ -90,8 +90,8 @@ header {
     width: 400px;
     height: 630px;
     position: relative;
-    top: 4rem;
-    left: 39%;
+    top: 1rem;
+    left: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,6 +115,12 @@ header {
   font-size: 3rem;
   font-weight: bold;
   color: white;
+}
+@media (max-width: 701px){
+
+  .head h1{
+    font-size: 1.5rem;
+  }
 }
 
 .form {
