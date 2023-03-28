@@ -116,9 +116,8 @@ header {
   font-weight: bold;
   color: white;
 }
-@media (max-width: 701px){
-
-  .head h1{
+@media (max-width: 701px) {
+  .head h1 {
     font-size: 1.5rem;
   }
 }
@@ -135,7 +134,6 @@ form {
 }
 
 label {
-  
   margin-left: 0rem;
   align-self: start;
   margin-bottom: 0.7rem;
@@ -164,13 +162,10 @@ textarea {
   border: none;
 }
 
-textarea::placeholder{
+textarea::placeholder {
   position: absolute;
   top: 10px;
-  
-  
 }
-
 
 input:focus,
 textarea:focus {
@@ -217,7 +212,7 @@ textarea:focus {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  
+
   margin-top: 2.3rem;
 }
 
