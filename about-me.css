@@ -1,8 +1,6 @@
 /*Imports*/
 @import url("Portfolio/node_modules/bootstrap/dist/css/bootstrap.css");
 
-
-
 /*Cursor*/
 #about .bg-secondary::after {
   content: "|";
@@ -10,7 +8,6 @@
   font-weight: bolder;
   font-size: 1em;
   animation: blink 1s infinite;
-  
 }
 
 @keyframes blink {
@@ -22,8 +19,6 @@
     color: white;
   }
 }
-
-
 
 /*Skill-Section*/
 
@@ -80,8 +75,6 @@
   }
 }
 
-
-
 .card-body:hover .fa-html5 {
   animation: neon 1s ease-in-out infinite alternate;
 }
@@ -98,7 +91,6 @@
   animation: neon 1s ease-in-out infinite alternate;
 }
 
-
 @keyframes neon {
   0% {
     color: #fff;
@@ -111,14 +103,6 @@
       0 0 35px #d694ff, 0 0 40px #d694ff, 0 0 50px #d694ff, 0 0 75px #00ff00;
   }
 }
-
-
-
-
-
-
-
-
 
 /*Watch on GitHub Buttons*/
 
@@ -142,5 +126,3 @@
 .navi {
   font-size: larger;
 }
-
-
