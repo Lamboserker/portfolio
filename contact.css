@@ -351,12 +351,14 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   footer {
     position: fixed;
     bottom: 0;
   }
 }
+
+
 
 .footer-container {
   max-width: 1200px;

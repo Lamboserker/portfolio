@@ -1,3 +1,7 @@
+body{
+  width: 100vw;
+}
+
 /*Cursor*/
 #about .bg-secondary::after {
   content: "|";
